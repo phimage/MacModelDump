@@ -1,41 +1,24 @@
 import Foundation
 import SwiftSoup
 
-struct Device {
-    var name: String
-    var kb: String
-    var shortName: String
-    var identifier: [String]
-    var image: String
-    var modelName: String
-
-    var toDeviveKit: String {
-return """
-            Device(
-            "\(name)",
-            "Device is a [\(modelName)](\(kb))",
-            "https://support.apple.com\(image)",
-            ["\(identifier.joined(separator: "\" ,\""))"], 0,(), "\(modelName)", -1, False, False, False, False, False, False, False, False, False, 0, False, 0)
-"""
-    }
-             
-}
 
 public struct Dump {
    
     static let models = [
-        ("macMinis", "https://support.apple.com/en-us/HT201894", "https://support.apple.com/specs/macmini", "Mac Mini"),
-        ("iMacs", "https://support.apple.com/en-us/HT201634", "https://support.apple.com/mac/imac", "iMac"),
-        ("macPros", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
-        ("macBooks", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook",  "Mac Book"),
-        ("macBookAirs", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air",  "Mac Book Air"),
-        ("macBookPros", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
+        ModelInfo("macMinis", "https://support.apple.com/en-us/HT201894", "https://support.apple.com/specs/macmini", "Mac Mini"),
+        ModelInfo("iMacs", "https://support.apple.com/en-us/HT201634", "https://support.apple.com/mac/imac", "iMac"),
+        ModelInfo("macPros", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
+        ModelInfo("macBooks", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook",  "Mac Book"),
+        ModelInfo("macBookAirs", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air",  "Mac Book Air"),
+        ModelInfo("macBookPros", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
     ]
+
+    public static var renderer: DevicesRenderer = MarkdownRenderer() // DeviceKitRenderer()
 
     public static func run() {
 
-        for (models, urlString, alternativeURL, shortName) in models {
-            let (data, response, error) = URLSession.shared.synchronousDataTask(with: URL(string: urlString)!)
+        for model in models {
+            let (data, response, error) = URLSession.shared.synchronousDataTask(with: model.url)
             guard let dataUnwrapped = data, let html = String(data: dataUnwrapped, encoding: .utf8)  else {
                 print("\(String(describing: error)), \(String(describing: response))")
                 continue
@@ -47,8 +30,8 @@ public struct Dump {
                 for link in links {
                     let linkHref: String = try link.attr("href")
                     if linkHref.contains("https://support.apple.com/kb/SP") {
-                        let model: String = try link.text()
-                        guard !model.isEmpty else {
+                        let modelName: String = try link.text()
+                        guard !modelName.isEmpty else {
                             continue
                         }
                         
@@ -68,17 +51,17 @@ public struct Dump {
                             identifier = String(identifier[identifier.startIndex..<identifier.index(of: " ")!])
                             identifier = String(identifier.replacingOccurrences(of: " ", with: ""))
                             let identifiers = identifier.split(separator: ";").map { String($0) }
-                            //print("\(model): \(identifiers)")
+                            //print("\(modelName): \(identifiers)")
                             
                             let image = try paragrapheWithImage.select("img").first()!.attr("src")
 
                             let device = Device(
-                                name: model.camelized,
+                                name: modelName.camelized,
                                 kb: linkHref,
-                                shortName: shortName,
+                                shortName: model.shortName,
                                 identifier: identifiers,
                                 image: image,
-                                modelName: model)
+                                modelName: modelName)
                             if !device.identifier.isEmpty, !devices.contains(where: { return $0.name == device.name}) {
                                 devices.append(device)
                             }
@@ -90,13 +73,88 @@ public struct Dump {
             } catch {
                 print("error")
             }
-            print("## \(alternativeURL), \(urlString)")
-            print("\(models) = [")
-            print(devices.map { $0.toDeviveKit }.joined(separator: ",\n"))
-            print("]")
+
+            renderer.render(devices: devices, model: model)
+
         }
     }
 }
+
+// MARK: - Models
+
+public struct Device {
+    var name: String
+    var kb: String
+    var shortName: String
+    var identifier: [String]
+    var image: String
+    var modelName: String
+
+    var toDeviveKit: String {
+return """
+            Device(
+            "\(name)",
+            "Device is a [\(modelName)](\(kb))",
+            "https://support.apple.com\(image)",
+            ["\(identifier.joined(separator: "\" ,\""))"], 0,(), "\(modelName)", -1, False, False, False, False, False, False, False, False, False, 0, False, 0)
+"""
+    }
+
+    var toMarkdown: String {
+        return """
+        ### [\(modelName)](\(kb))
+        * identifier: \(identifier.joined(separator: ","))
+        ![\(name)](https://support.apple.com\(image))
+        """
+    }
+
+}
+public struct ModelInfo {
+    var models: String
+    var alternativeURL: String
+    var urlString: String
+    var shortName: String
+
+    public init(_ models: String, _ urlString: String, _ alternativeURL: String,_  shortName: String) {
+        self.models = models
+        self.alternativeURL = alternativeURL
+        self.urlString = urlString
+        self.shortName = shortName
+    }
+
+    var url: URL {
+        return URL(string: urlString)!
+    }
+}
+
+public protocol DevicesRenderer {
+    func render(devices: [Device], model: ModelInfo)
+}
+
+public struct DeviceKitRenderer: DevicesRenderer {
+    static let instance = DeviceKitRenderer()
+
+    public func render(devices: [Device], model: ModelInfo) {
+        print("## \(model.alternativeURL), \(model.urlString)")
+        print("\(model.models) = [")
+        print(devices.map { $0.toDeviveKit }.joined(separator: ",\n"))
+        print("]")
+    }
+
+}
+public struct MarkdownRenderer: DevicesRenderer {
+    static let instance = MarkdownRenderer()
+
+    public func render(devices: [Device], model: ModelInfo) {
+        print("## [\(model.shortName)](\(model.alternativeURL))")
+        print("")
+        print(devices.map { $0.toMarkdown }.joined(separator: "\n"))
+    }
+
+}
+
+// MARK: - Extensions
+
 extension URLSession {
     func synchronousDataTask(with url: URL) -> (Data?, URLResponse?, Error?) {
         var data: Data?
