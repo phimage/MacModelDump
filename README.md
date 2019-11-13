@@ -1,6 +1,26 @@
-# AppleDump
+# ModelAppleDump
 
-Dirty script to create device for DeviceKit https://github.com/devicekit/DeviceKit/pull/217.
+Dirty script to create device for DeviceKit https://github.com/devicekit/DeviceKit/pull/217 
+`modelappledump devicekit`
+
+---
+
+By default run  `modelappledump`
+
+```
+🖥️ Mac Mini
+🔗 https://support.apple.com/specs/macmini
+
+  🖥️ Mac mini (2018)
+  🔗 https://support.apple.com/kb/SP782
+  🖼️ https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2018-space-gray.jpg
+  🆔 Macmini8,1
+...
+``` 
+
+---
+
+For markdown `modelappledump markdown`
 
 ## [Mac Mini](https://support.apple.com/specs/macmini)
 

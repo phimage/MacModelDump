@@ -1,21 +1,31 @@
 import Foundation
 import SwiftSoup
 
-
 public struct Dump {
-   
+
     static let models = [
         ModelInfo("macMinis", "https://support.apple.com/en-us/HT201894", "https://support.apple.com/specs/macmini", "Mac Mini"),
         ModelInfo("iMacs", "https://support.apple.com/en-us/HT201634", "https://support.apple.com/mac/imac", "iMac"),
         ModelInfo("macPros", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
-        ModelInfo("macBooks", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook",  "Mac Book"),
-        ModelInfo("macBookAirs", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air",  "Mac Book Air"),
+        ModelInfo("macBooks", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook", "Mac Book"),
+        ModelInfo("macBookAirs", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air", "Mac Book Air"),
         ModelInfo("macBookPros", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
     ]
 
-    public static var renderer: DevicesRenderer = MarkdownRenderer() // DeviceKitRenderer()
-
-    public static func run() {
+    public static func renderer(for string: String) -> DevicesRenderer.Type {
+        switch string {
+        case "devicekit":
+            return DeviceKitRenderer.self
+        case "markdown":
+            return MarkdownRenderer.self
+        case "human", "emoji":
+            return HumanRenderer.self
+        default:
+            return HumanRenderer.self
+        }
+    }
+    public static func run(renderer rendererString: String) {
+        let renderer = Dump.renderer(for: rendererString)
 
         for model in models {
             let (data, response, error) = URLSession.shared.synchronousDataTask(with: model.url)
@@ -23,7 +33,7 @@ public struct Dump {
                 print("\(String(describing: error)), \(String(describing: response))")
                 continue
             }
-            var devices:[Device] = []
+            var devices: [Device] = []
             do {
                 let doc: Document = try SwiftSoup.parse(html)
                 let links = try doc.select("a")
@@ -34,15 +44,15 @@ public struct Dump {
                         guard !modelName.isEmpty else {
                             continue
                         }
-                        
-                        if let paragraphe = link.parent(), let paragrapheWithImage = paragraphe.parent(){
+
+                        if let paragraphe = link.parent(), let paragrapheWithImage = paragraphe.parent() {
                             var identifier = try paragraphe.text()
                             if let index = identifier.endIndex(of: "Model Identifier:") {
                                 identifier = String(identifier[index...])
                             } else {
                                 identifier = try paragrapheWithImage.text()
                                 guard let upindex = identifier.endIndex(of: "Model Identifier:") else {
-                                    
+
                                     continue
                                 }
                                 identifier = String(identifier[upindex...])
@@ -52,7 +62,7 @@ public struct Dump {
                             identifier = String(identifier.replacingOccurrences(of: " ", with: ""))
                             let identifiers = identifier.split(separator: ";").map { String($0) }
                             //print("\(modelName): \(identifiers)")
-                            
+
                             let image = try paragrapheWithImage.select("img").first()!.attr("src")
 
                             let device = Device(
@@ -75,7 +85,6 @@ public struct Dump {
             }
 
             renderer.render(devices: devices, model: model)
-
         }
     }
 }
@@ -108,6 +117,15 @@ return """
         """
     }
 
+    var toHuman: String {
+return """
+  🖥️ \(modelName)
+  🔗 \(kb)
+  🖼️ https://support.apple.com\(image)
+  🆔 \(identifier.joined(separator: ", "))
+"""
+    }
+
 }
 public struct ModelInfo {
     var models: String
@@ -115,7 +133,7 @@ public struct ModelInfo {
     var urlString: String
     var shortName: String
 
-    public init(_ models: String, _ urlString: String, _ alternativeURL: String,_  shortName: String) {
+    public init(_ models: String, _ urlString: String, _ alternativeURL: String, _  shortName: String) {
         self.models = models
         self.alternativeURL = alternativeURL
         self.urlString = urlString
@@ -128,13 +146,12 @@ public struct ModelInfo {
 }
 
 public protocol DevicesRenderer {
-    func render(devices: [Device], model: ModelInfo)
+    static func render(devices: [Device], model: ModelInfo)
 }
 
 public struct DeviceKitRenderer: DevicesRenderer {
-    static let instance = DeviceKitRenderer()
 
-    public func render(devices: [Device], model: ModelInfo) {
+    public static func render(devices: [Device], model: ModelInfo) {
         print("## \(model.alternativeURL), \(model.urlString)")
         print("\(model.models) = [")
         print(devices.map { $0.toDeviveKit }.joined(separator: ",\n"))
@@ -142,13 +159,25 @@ public struct DeviceKitRenderer: DevicesRenderer {
     }
 
 }
-public struct MarkdownRenderer: DevicesRenderer {
-    static let instance = MarkdownRenderer()
 
-    public func render(devices: [Device], model: ModelInfo) {
+public struct MarkdownRenderer: DevicesRenderer {
+
+    public static func render(devices: [Device], model: ModelInfo) {
         print("## [\(model.shortName)](\(model.alternativeURL))")
-        print("")
+        print("\n")
         print(devices.map { $0.toMarkdown }.joined(separator: "\n"))
+    }
+
+}
+
+public struct HumanRenderer: DevicesRenderer {
+
+    public static func render(devices: [Device], model: ModelInfo) {
+        print("🖥️ \(model.shortName)")
+        print("🔗 \(model.alternativeURL)")
+        print("")
+        print(devices.map { $0.toHuman}.joined(separator: "\n\n"))
+        print("")
     }
 
 }
@@ -160,20 +189,20 @@ extension URLSession {
         var data: Data?
         var response: URLResponse?
         var error: Error?
-        
+
         let semaphore = DispatchSemaphore(value: 0)
-        
+
         let dataTask = self.dataTask(with: url) {
             data = $0
             response = $1
             error = $2
-            
+
             semaphore.signal()
         }
         dataTask.resume()
-        
+
         _ = semaphore.wait(timeout: .distantFuture)
-        
+
         return (data, response, error)
     }
 }
@@ -209,7 +238,7 @@ extension StringProtocol {
         return result
     }
 }
-fileprivate let badChars = CharacterSet.alphanumerics.inverted
+private let badChars = CharacterSet.alphanumerics.inverted
 
 extension String {
     var uppercasingFirst: String {

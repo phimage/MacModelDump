@@ -4,22 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppleDump",
+    name: "ModelAppleDump",
     products: [
-        .executable(name: "appledump", targets: ["Main"]),
+        .executable(name: "modelappledump", targets: ["Main"]),
         .library(
-            name: "AppleDump",
-            targets: ["AppleDump"]),
+            name: "ModelAppleDump",
+            targets: ["ModelAppleDump"])
     ],
     dependencies: [
         .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.2.2")
     ],
     targets: [
         .target(
-            name: "AppleDump",
-            dependencies: ["SwiftSoup"]),
+            name: "ModelAppleDump",
+            dependencies: ["SwiftSoup"]
+        ),
         .target(
               name: "Main",
-              dependencies: ["AppleDump"])
+              dependencies: ["ModelAppleDump"])
     ]
 )
