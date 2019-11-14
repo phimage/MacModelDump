@@ -339,7 +339,7 @@ For markdown `modelappledump markdown`
 [license-url]: https://github.com/phimage/MacModelDump/blob/master/LICENSE
 [swift-shield]: https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat
 [swift-url]: https://developer.apple.com/swift/
-[build-shield]: https://travis-ci.org/phimage/MacModelDump.svg?branch=master
-[build-url]: https://travis-ci.org/phimage/MacModelDump
+[build-shield]: https://github.com/phimage/MacModelDump/workflows/CI/badge.svg
+[build-url]: https://github.com/phimage/MacModelDump/actions?workflow=CI
 [sponsor-shield]: https://img.shields.io/badge/Sponsor-%F0%9F%A7%A1-white.svg?style=flat
 [sponsor-url]: https://github.com/sponsors/phimage
