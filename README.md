@@ -1,5 +1,18 @@
 # ModelAppleDump
 
+[![Build Status][build-shield]][build-url]
+[![Swift 5.1][swift-shield]][swift-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Sponsor][sponsor-shield]][sponsor-url]
+<a href="https://www.patreon.com/phimage">
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="20">
+</a>
+<a href="https://paypal.me/ericphimage">
+<img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="20">
+</a>
+
 Dirty script to create device for DeviceKit https://github.com/devicekit/DeviceKit/pull/217 
 `modelappledump devicekit`
 
@@ -314,3 +327,19 @@ For markdown `modelappledump markdown`
 ### [MacBook Pro (15-inch, Early 2008)](https://support.apple.com/kb/SP4)
 * identifier: MacBookPro4,1
 ![macBookPro15InchEarly2008](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2008-15in-device.jpg)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[stars-shield]: https://img.shields.io/github/stars/phimage/MacModelDump.svg?style=flat
+[stars-url]: https://github.com/phimage/MacModelDump/stargazers
+[issues-shield]: https://img.shields.io/github/issues/phimage/MacModelDump.svg?style=flat
+[issues-url]: https://github.com/phimage/MacModelDump/issues
+[license-shield]: https://img.shields.io/github/license/phimage/MacModelDump.svg?style=flat
+[license-url]: https://github.com/phimage/MacModelDump/blob/master/LICENSE
+[swift-shield]: https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat
+[swift-url]: https://developer.apple.com/swift/
+[build-shield]: https://travis-ci.org/phimage/MacModelDump.svg?branch=master
+[build-url]: https://travis-ci.org/phimage/MacModelDump
+[sponsor-shield]: https://img.shields.io/badge/Sponsor-%F0%9F%A7%A1-white.svg?style=flat
+[sponsor-url]: https://github.com/sponsors/phimage
