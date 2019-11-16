@@ -206,7 +206,9 @@ For markdown `modelappledump markdown`
 * identifier: MacBookAir2,1
 ![macBookAirMid2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2009-2010-13in-device.jpg)
 ## [Mac Book Pro](https://support.apple.com/mac/macbook-pro)
-
+### [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
+* identifier: MacBookPro16,1
+![macBookPro16Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-16in-2019.jpg)
 ### [MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)](https://support.apple.com/kb/SP799)
 * identifier: MacBookPro15,4
 ![macBookPro13Inch2019TwoThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-13in-device.jpg)
