@@ -2,16 +2,18 @@ name: UpToDate
 
 on: 
   project_card:
-    types: [created, edited, moved]
+    types: [created, edited]
 
 jobs:
-  build:
+  check:
 
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v1
-    - name: check README.md 
+    - name: build
       run: |
         swift build
+    - name: check README.md 
+      run: |
         .build/x86_64-apple-macosx/debug/modelappledump markdown > dump.md
         ./check.sh dump.md README.md     
