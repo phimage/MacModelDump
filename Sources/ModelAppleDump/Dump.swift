@@ -4,12 +4,12 @@ import SwiftSoup
 public struct Dump {
 
     static let models = [
-        ModelInfo("macMinis", "https://support.apple.com/en-us/HT201894", "https://support.apple.com/specs/macmini", "Mac Mini"),
-        ModelInfo("iMacs", "https://support.apple.com/en-us/HT201634", "https://support.apple.com/mac/imac", "iMac"),
-        ModelInfo("macPros", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
-        ModelInfo("macBooks", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook", "Mac Book"),
-        ModelInfo("macBookAirs", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air", "Mac Book Air"),
-        ModelInfo("macBookPros", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
+        ModelInfo("macMini", "https://support.apple.com/en-us/HT201894", "https://support.apple.com/specs/macmini", "Mac Mini"),
+        ModelInfo("iMac", "https://support.apple.com/en-us/HT201634", "https://support.apple.com/mac/imac", "iMac"),
+        ModelInfo("macPro", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
+        ModelInfo("macBook", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook", "Mac Book"),
+        ModelInfo("macBookAir", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air", "Mac Book Air"),
+        ModelInfo("macBookPro", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
     ]
 
     public static func renderer(for string: String) -> DevicesRenderer.Type {
@@ -24,9 +24,27 @@ public struct Dump {
             return HumanRenderer.self
         }
     }
-    public static func run(renderer rendererString: String) {
-        let renderer = Dump.renderer(for: rendererString)
 
+    public static func models(for string: String) -> [ModelInfo] {
+        let allModels = Dump.models
+        if string.isEmpty || string == "all" {
+            return allModels
+        }
+        let modelStrings = string.split(separator: ",")
+
+        return modelStrings.compactMap {
+            for aModel in allModels {
+                if aModel.model.lowercased() == $0.lowercased() {
+                    return aModel
+                }
+            }
+            return nil
+        }
+    }
+
+    public static func run(renderer rendererString: String, type: String) {
+        let renderer = Dump.renderer(for: rendererString)
+        let models = Dump.models(for: type)
         for model in models {
             let (data, response, error) = URLSession.shared.synchronousDataTask(with: model.url)
             guard let dataUnwrapped = data, let html = String(data: dataUnwrapped, encoding: .utf8)  else {
@@ -45,12 +63,12 @@ public struct Dump {
                             continue
                         }
 
-                        if let paragraphe = link.parent(), let paragrapheWithImage = paragraphe.parent() {
+                        if let paragraphe = link.parent(), let paragrapheOfParent = paragraphe.parent() {
                             var identifier = try paragraphe.text()
                             if let index = identifier.endIndex(of: "Model Identifier:") {
                                 identifier = String(identifier[index...])
                             } else {
-                                identifier = try paragrapheWithImage.text()
+                                identifier = try paragrapheOfParent.text()
                                 guard let upindex = identifier.endIndex(of: "Model Identifier:") else {
 
                                     continue
@@ -63,7 +81,12 @@ public struct Dump {
                             let identifiers = identifier.split(separator: ";").map { String($0) }
                             //print("\(modelName): \(identifiers)")
 
-                            let image = try paragrapheWithImage.select("img").first()!.attr("src")
+                            var image: String = ""
+                            if let siblingImage = try paragraphe.previousElementSibling()?.select("img").first()?.attr("src") {
+                                image = siblingImage
+                            } else if let parentImage = try paragrapheOfParent.select("img").first()?.attr("src") {
+                                image = parentImage
+                            }
 
                             let device = Device(
                                 name: modelName.camelized,
@@ -128,13 +151,16 @@ return """
 
 }
 public struct ModelInfo {
-    var models: String
+    var models: String {
+        return "\(model)s"
+    }
+    var model: String
     var alternativeURL: String
     var urlString: String
     var shortName: String
 
-    public init(_ models: String, _ urlString: String, _ alternativeURL: String, _  shortName: String) {
-        self.models = models
+    public init(_ model: String, _ urlString: String, _ alternativeURL: String, _  shortName: String) {
+        self.model = model
         self.alternativeURL = alternativeURL
         self.urlString = urlString
         self.shortName = shortName
