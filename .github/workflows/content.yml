@@ -1,0 +1,17 @@
+name: UpToDate
+
+on: 
+  project_card:
+    types: [opened]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: check README.md 
+      run: |
+        swift build
+        .build/x86_64-apple-macosx/debug/modelappledump markdown > dump.md
+        ./check.sh dump.md README.md     
