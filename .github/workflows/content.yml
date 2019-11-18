@@ -2,7 +2,7 @@ name: UpToDate
 
 on: 
   project_card:
-    types: [opened]
+    types: [created, edited, moved]
 
 jobs:
   build:
