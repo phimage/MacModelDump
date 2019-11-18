@@ -35,6 +35,10 @@ By default run  `modelappledump`
 
 For markdown `modelappledump markdown`
 
+### Filter on device
+
+`modelappledump markdown macMini,iMac`
+
 ## [Mac Mini](https://support.apple.com/specs/macmini)
 
 
