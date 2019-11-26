@@ -1,8 +1,8 @@
 name: UpToDate
 
-on: 
-  project_card:
-    types: [created, edited]
+on:
+  schedule:
+    - cron:  '0 14 1 * *'
 
 jobs:
   check:
