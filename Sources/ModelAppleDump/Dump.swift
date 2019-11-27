@@ -128,7 +128,7 @@ return """
             "\(name)",
             "Device is a [\(modelName)](\(kb))",
             "https://support.apple.com\(image)",
-            ["\(identifier.joined(separator: "\" ,\""))"], 0,(), "\(modelName)", -1, False, False, False, False, False, False, False, False, False, 0, False, 0)
+            ["\(identifier.joined(separator: "\" ,\""))"], 0, (), "\(modelName)", -1, False, False, False, False, False, False, False, False, False, 0, False, 0)
 """
     }
 
