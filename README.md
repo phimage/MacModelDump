@@ -39,6 +39,14 @@ For markdown `modelappledump markdown`
 
 `modelappledump markdown macMini,iMac`
 
+# Table of Contents
+1. [Mac Mini](#macmini)
+2. [iMac](#imac)
+3. [Mac Pro](#macpro)
+4. [Mac Book](#macbook)
+5. [Mac Book Air](#macbookair)
+6. [Mac Book Pro](#macbookpro)
+
 ## [Mac Mini](https://support.apple.com/specs/macmini) [🔎](https://support.apple.com/en-us/HT201894)
 
 
