@@ -189,7 +189,7 @@ public struct DeviceKitRenderer: DevicesRenderer {
 public struct MarkdownRenderer: DevicesRenderer {
 
     public static func render(devices: [Device], model: ModelInfo) {
-        print("## [\(model.shortName)](\(model.alternativeURL))")
+        print("## [\(model.shortName)](\(model.alternativeURL)) [🔎](\(model.urlString))")
         print("\n")
         print(devices.map { $0.toMarkdown }.joined(separator: "\n"))
     }

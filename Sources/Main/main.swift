@@ -9,5 +9,4 @@ if CommandLine.argc > 2 {
     type = CommandLine.arguments [2]
 }
 
-
 Dump.run(renderer: renderer, type: type)

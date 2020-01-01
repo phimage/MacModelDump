@@ -39,7 +39,7 @@ For markdown `modelappledump markdown`
 
 `modelappledump markdown macMini,iMac`
 
-## [Mac Mini](https://support.apple.com/specs/macmini)
+## [Mac Mini](https://support.apple.com/specs/macmini) [🔎](https://support.apple.com/en-us/HT201894)
 
 
 ### [Mac mini (2018)](https://support.apple.com/kb/SP782)
@@ -63,7 +63,7 @@ For markdown `modelappledump markdown`
 ### [Mac mini (Early 2009)](https://support.apple.com/kb/SP505)
 * identifier: Macmini3,1
 ![macMiniEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2009-device.jpg)
-## [iMac](https://support.apple.com/mac/imac)
+## [iMac](https://support.apple.com/mac/imac) [🔎](https://support.apple.com/en-us/HT201634)
 
 
 ### [iMac (Retina 5K, 27-inch, 2019)](https://support.apple.com/kb/SP790)
@@ -132,13 +132,31 @@ For markdown `modelappledump markdown`
 ### [iMac (20-inch, Early 2009)](https://support.apple.com/kb/SP507)
 * identifier: iMac9,1
 ![iMac20InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg)
-## [Mac Pro](https://support.apple.com/mac/mac-pro)
+## [Mac Pro](https://support.apple.com/mac/mac-pro) [🔎](https://support.apple.com/en-us/HT202888)
 
 
+### [Mac Pro (2019)](https://support.apple.com/kb/SP797)
+* identifier: MacPro7,1
+![macPro2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2019.jpg)
+### [Mac Pro (Late 2013)](https://support.apple.com/kb/SP697)
+* identifier: MacPro6,1
+![macProLate2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2013.jpg)
 ### [Mac Pro (Mid 2012)](https://support.apple.com/kb/SP652)
 * identifier: MacPro5,1
-![macProMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/macpro_previous.png)
-## [Mac Book](https://support.apple.com/mac/macbook)
+![macProMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg)
+### [Mac Pro Server (Mid 2012)](https://support.apple.com/kb/SP652)
+* identifier: MacPro5,1
+![macProServerMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg)
+### [Mac Pro (Mid 2010)](https://support.apple.com/kb/SP589)
+* identifier: MacPro5,1
+![macProMid2010](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg)
+### [Mac Pro Server (Mid 2010)](https://support.apple.com/kb/SP589)
+* identifier: MacPro5,1
+![macProServerMid2010](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg)
+### [Mac Pro (Early 2009)](https://support.apple.com/kb/SP506)
+* identifier: MacPro4,1
+![macProEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg)
+## [Mac Book](https://support.apple.com/mac/macbook) [🔎](https://support.apple.com/en-us/HT201608)
 
 
 ### [MacBook (Retina, 12-inch, 2017)](https://support.apple.com/kb/SP757)
@@ -162,7 +180,7 @@ For markdown `modelappledump markdown`
 ### [MacBook (13-inch, Early 2009)](https://support.apple.com/kb/SP504)
 * identifier: MacBook5,2
 ![macBook13InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-early-mid-2009-device.jpg)
-## [Mac Book Air](https://support.apple.com/mac/macbook-air)
+## [Mac Book Air](https://support.apple.com/mac/macbook-air) [🔎](https://support.apple.com/en-us/HT201862)
 
 
 ### [MacBook Air (Retina, 13-inch, 2019)](https://support.apple.com/kb/SP798)
@@ -213,7 +231,7 @@ For markdown `modelappledump markdown`
 ### [MacBook Air (Mid 2009)](https://support.apple.com/kb/SP548)
 * identifier: MacBookAir2,1
 ![macBookAirMid2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2009-2010-13in-device.jpg)
-## [Mac Book Pro](https://support.apple.com/mac/macbook-pro)
+## [Mac Book Pro](https://support.apple.com/mac/macbook-pro) [🔎](https://support.apple.com/en-us/HT201300)
 
 
 ### [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
