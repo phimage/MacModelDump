@@ -146,6 +146,9 @@ For markdown `modelappledump markdown`
 ### [Mac Pro (2019)](https://support.apple.com/kb/SP797)
 * identifier: MacPro7,1
 ![macPro2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2019.jpg)
+### [Mac Pro (Rack, 2019)](https://support.apple.com/kb/SP810)
+* identifier: MacPro7,1
+![macProRack2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2019-rack.jpg)
 ### [Mac Pro (Late 2013)](https://support.apple.com/kb/SP697)
 * identifier: MacPro6,1
 ![macProLate2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2013.jpg)
@@ -191,6 +194,9 @@ For markdown `modelappledump markdown`
 ## [Mac Book Air](https://support.apple.com/mac/macbook-air) [🔎](https://support.apple.com/en-us/HT201862)
 
 
+### [MacBook Air (Retina, 13-inch, 2020)](https://support.apple.com/kb/SP813)
+* identifier: MacBookAir9,1
+![macBookAirRetina13Inch2020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-device.jpg)
 ### [MacBook Air (Retina, 13-inch, 2019)](https://support.apple.com/kb/SP798)
 * identifier: MacBookAir8,2
 ![macBookAirRetina13Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2018-device.jpg)
