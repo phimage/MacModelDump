@@ -76,10 +76,13 @@ For markdown `modelappledump markdown`
 
 ### [iMac (Retina 5K, 27-inch, 2019)](https://support.apple.com/kb/SP790)
 * identifier: iMac19,1
-![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2017.jpg)
+![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2019.jpg)
 ### [iMac (Retina 4K, 21.5-inch, 2019)](https://support.apple.com/kb/SP789)
 * identifier: iMac19,2
-![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2017.jpg)
+![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2019.jpg)
+### [iMac Pro (2017)](https://support.apple.com/kb/SP771)
+* identifier: iMacPro1,1
+![iMacPro2017](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-pro-2017.jpg)
 ### [iMac (Retina 5K, 27-inch, 2017)](https://support.apple.com/kb/SP760)
 * identifier: iMac18,3
 ![iMacRetina5K27Inch2017](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2017.jpg)
@@ -248,6 +251,12 @@ For markdown `modelappledump markdown`
 ## [Mac Book Pro](https://support.apple.com/mac/macbook-pro) [🔎](https://support.apple.com/en-us/HT201300)
 
 
+### [MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)](https://support.apple.com/kb/SP818)
+* identifier: MacBookPro16,3
+![macBookPro13Inch2020TwoThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg)
+### [MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)](https://support.apple.com/kb/SP819)
+* identifier: MacBookPro16,2
+![macBookPro13Inch2020FourThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg)
 ### [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
 * identifier: MacBookPro16,1
 ![macBookPro16Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-16in-2019.jpg)
