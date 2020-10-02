@@ -74,12 +74,15 @@ For markdown `modelappledump markdown`
 ## [iMac](https://support.apple.com/mac/imac) [🔎](https://support.apple.com/en-us/HT201634)
 
 
+### [iMac (Retina 5K, 27-inch, 2020)](https://support.apple.com/kb/SP821)
+* identifier: iMac20,1, iMac20,2
+![iMacRetina5K27Inch2020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2020.jpg)
 ### [iMac (Retina 5K, 27-inch, 2019)](https://support.apple.com/kb/SP790)
 * identifier: iMac19,1
-![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2019.jpg)
+![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2017.jpg)
 ### [iMac (Retina 4K, 21.5-inch, 2019)](https://support.apple.com/kb/SP789)
 * identifier: iMac19,2
-![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2019.jpg)
+![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2017.jpg)
 ### [iMac Pro (2017)](https://support.apple.com/kb/SP771)
 * identifier: iMacPro1,1
 ![iMacPro2017](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-pro-2017.jpg)
