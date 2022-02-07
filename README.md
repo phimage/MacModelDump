@@ -50,6 +50,9 @@ For markdown `modelappledump markdown`
 ## [Mac Mini](https://support.apple.com/specs/macmini) [🔎](https://support.apple.com/en-us/HT201894)
 
 
+### [Mac mini (M1, 2020)](https://support.apple.com/kb/SP823)
+* identifier: Macmini9,1
+![macMiniM12020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2020-silver.jpg)
 ### [Mac mini (2018)](https://support.apple.com/kb/SP782)
 * identifier: Macmini8,1
 ![macMini2018](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2018-space-gray.jpg)
@@ -57,7 +60,7 @@ For markdown `modelappledump markdown`
 * identifier: Macmini7,1
 ![macMiniLate2014](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2014.jpg)
 ### [Mac mini (Late 2012)](https://support.apple.com/kb/SP659)
-* identifier: Macmini6,1, Macmini6,2
+* identifier: Macmini6,1
 ![macMiniLate2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2011-2012-2014-device.jpg)
 ### [Mac mini (Mid 2011)](https://support.apple.com/kb/SP632)
 * identifier: Macmini5,1, Macmini5,2
@@ -74,15 +77,18 @@ For markdown `modelappledump markdown`
 ## [iMac](https://support.apple.com/mac/imac) [🔎](https://support.apple.com/en-us/HT201634)
 
 
+### [iMac (24-inch, M1, 2021)](https://support.apple.com/kb/SP839)
+* identifier: iMac21,1
+![iMac24InchM12021](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/id-imac-24-2021.png)
 ### [iMac (Retina 5K, 27-inch, 2020)](https://support.apple.com/kb/SP821)
 * identifier: iMac20,1, iMac20,2
 ![iMacRetina5K27Inch2020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2020.jpg)
 ### [iMac (Retina 5K, 27-inch, 2019)](https://support.apple.com/kb/SP790)
 * identifier: iMac19,1
-![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2017.jpg)
+![iMacRetina5K27Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2019.jpg)
 ### [iMac (Retina 4K, 21.5-inch, 2019)](https://support.apple.com/kb/SP789)
 * identifier: iMac19,2
-![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2017.jpg)
+![iMacRetina4K215Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2019.jpg)
 ### [iMac Pro (2017)](https://support.apple.com/kb/SP771)
 * identifier: iMacPro1,1
 ![iMacPro2017](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-pro-2017.jpg)
@@ -145,7 +151,7 @@ For markdown `modelappledump markdown`
 ![iMac24InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg)
 ### [iMac (20-inch, Early 2009)](https://support.apple.com/kb/SP507)
 * identifier: iMac9,1
-![iMac20InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg)
+![iMac20InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-24-2009-early.jpg)
 ## [Mac Pro](https://support.apple.com/mac/mac-pro) [🔎](https://support.apple.com/en-us/HT202888)
 
 
@@ -200,6 +206,9 @@ For markdown `modelappledump markdown`
 ## [Mac Book Air](https://support.apple.com/mac/macbook-air) [🔎](https://support.apple.com/en-us/HT201862)
 
 
+### [MacBook Air (M1, 2020)](https://support.apple.com/kb/SP825)
+* identifier: MacBookAir10,1
+![macBookAirM12020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-late-device.jpg)
 ### [MacBook Air (Retina, 13-inch, 2020)](https://support.apple.com/kb/SP813)
 * identifier: MacBookAir9,1
 ![macBookAirRetina13Inch2020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-device.jpg)
@@ -254,6 +263,15 @@ For markdown `modelappledump markdown`
 ## [Mac Book Pro](https://support.apple.com/mac/macbook-pro) [🔎](https://support.apple.com/en-us/HT201300)
 
 
+### [MacBook Pro (14-inch, 2021)](https://support.apple.com/kb/SP854)
+* identifier: MacBookPro18,3, MacBookPro18,4
+![macBookPro14Inch2021](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-14in.png)
+### [MacBook Pro (16-inch, 2021)](https://support.apple.com/kb/SP858)
+* identifier: MacBookPro18,1, MacBookPro18,2
+![macBookPro16Inch2021](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-16in.png)
+### [MacBook Pro (13-inch, M1, 2020)](https://support.apple.com/kb/SP824)
+* identifier: MacBookPro17,1 
+![macBookPro13InchM12020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-late-13in-device.jpg)
 ### [MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)](https://support.apple.com/kb/SP818)
 * identifier: MacBookPro16,3
 ![macBookPro13Inch2020TwoThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg)
@@ -261,7 +279,7 @@ For markdown `modelappledump markdown`
 * identifier: MacBookPro16,2
 ![macBookPro13Inch2020FourThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg)
 ### [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
-* identifier: MacBookPro16,1
+* identifier: MacBookPro16,1, MacBookPro16,4
 ![macBookPro16Inch2019](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-16in-2019.jpg)
 ### [MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)](https://support.apple.com/kb/SP799)
 * identifier: MacBookPro15,4
@@ -297,56 +315,56 @@ For markdown `modelappledump markdown`
 * identifier: MacBookPro13,1
 ![macBookPro13Inch2016TwoThunderbolt3Ports](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2016-13in-device.jpg)
 ### [MacBook Pro (Retina, 15-inch, Mid 2015)](https://support.apple.com/kb/SP719)
-* identifier: MacBookPro11,4
+* identifier: MacBookPro11,4, MacBookPro11,5
 ![macBookProRetina15InchMid2015](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2015-15in-device.jpg)
 ### [MacBook Pro (Retina, 13-inch, Early 2015)](https://support.apple.com/kb/SP715)
 * identifier: MacBookPro12,1
 ![macBookProRetina13InchEarly2015](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2015-13in-device.jpg)
 ### [MacBook Pro (Retina, 15-inch, Mid 2014)](https://support.apple.com/kb/SP704)
-* identifier: MacBookPro11,2
+* identifier: MacBookPro11,2,
 ![macBookProRetina15InchMid2014](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2014-15in-device.jpg)
 ### [MacBook Pro (Retina, 13-inch, Mid 2014)](https://support.apple.com/kb/SP703)
 * identifier: MacBookPro11,1
 ![macBookProRetina13InchMid2014](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2014-13in-device.jpg)
 ### [MacBook Pro (Retina, 15-inch, Late 2013)](https://support.apple.com/kb/SP690)
-* identifier: MacBookPro11,2
+* identifier: MacBookPro11,2,
 ![macBookProRetina15InchLate2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2013-15in-device.jpg)
-### [MacBook Pro (Retina, 15-inch, Early 2013)](https://support.apple.com/kb/SP669)
-* identifier: MacBookPro10,1
-![macBookProRetina15InchEarly2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2013-15in-device.jpg)
 ### [MacBook Pro (Retina, 13-inch, Late 2013)](https://support.apple.com/kb/SP691)
 * identifier: MacBookPro11,1
 ![macBookProRetina13InchLate2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2013-13in-device.jpg)
+### [MacBook Pro (Retina, 15-inch, Early 2013)](https://support.apple.com/kb/SP669)
+* identifier: MacBookPro10,1
+![macBookProRetina15InchEarly2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2013-15in-device.jpg)
 ### [MacBook Pro (Retina, 13-inch, Early 2013)](https://support.apple.com/kb/SP668)
 * identifier: MacBookPro10,2
 ![macBookProRetina13InchEarly2013](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2013-13in-device.jpg)
+### [MacBook Pro (Retina, 13-inch, Late 2012)](https://support.apple.com/kb/SP658)
+* identifier: MacBookPro10,2
+![macBookProRetina13InchLate2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2012-13in-device.jpg)
 ### [MacBook Pro (Retina, 15-inch, Mid 2012)](https://support.apple.com/kb/SP653)
 * identifier: MacBookPro10,1
 ![macBookProRetina15InchMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-15in-device.jpg)
 ### [MacBook Pro (15-inch, Mid 2012)](https://support.apple.com/kb/SP694)
 * identifier: MacBookPro9,1
 ![macBookPro15InchMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-15in-device2.jpg)
-### [MacBook Pro (Retina, 13-inch, Late 2012)](https://support.apple.com/kb/SP658)
-* identifier: MacBookPro10,2
-![macBookProRetina13InchLate2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2012-13in-device.jpg)
 ### [MacBook Pro (13-inch, Mid 2012)](https://support.apple.com/kb/SP649)
 * identifier: MacBookPro9,2
 ![macBookPro13InchMid2012](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-13in-device.jpg)
 ### [MacBook Pro (17-inch, Late 2011)](https://support.apple.com/kb/SP646)
 * identifier: MacBookPro8,3
 ![macBookPro17InchLate2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-17in-device.jpg)
-### [MacBook Pro (17-inch, Early 2011)](https://support.apple.com/kb/SP621)
-* identifier: MacBookPro8,3
-![macBookPro17InchEarly2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-17in-device.jpg)
 ### [MacBook Pro (15-inch, Late 2011)](https://support.apple.com/kb/SP644)
 * identifier: MacBookPro8,2
 ![macBookPro15InchLate2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-15in-device.jpg)
-### [MacBook Pro (15-inch, Early 2011)](https://support.apple.com/kb/SP620)
-* identifier: MacBookPro8,2
-![macBookPro15InchEarly2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-15in-device.jpg)
 ### [MacBook Pro (13-inch, Late 2011)](https://support.apple.com/kb/SP645)
 * identifier: MacBookPro8,1
 ![macBookPro13InchLate2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-13in-device.jpg)
+### [MacBook Pro (17-inch, Early 2011)](https://support.apple.com/kb/SP621)
+* identifier: MacBookPro8,3
+![macBookPro17InchEarly2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-17in-device.jpg)
+### [MacBook Pro (15-inch, Early 2011)](https://support.apple.com/kb/SP620)
+* identifier: MacBookPro8,2
+![macBookPro15InchEarly2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-15in-device.jpg)
 ### [MacBook Pro (13-inch, Early 2011)](https://support.apple.com/kb/SP619)
 * identifier: MacBookPro8,1
 ![macBookPro13InchEarly2011](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-13in-device.jpg)
@@ -362,9 +380,6 @@ For markdown `modelappledump markdown`
 ### [MacBook Pro (17-inch, Mid 2009)](https://support.apple.com/kb/SP546)
 * identifier: MacBookPro5,2
 ![macBookPro17InchMid2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-mid-2009-17in-device.jpg)
-### [MacBook Pro (17-inch, Early 2009)](https://support.apple.com/kb/SP503)
-* identifier: MacBookPro5,2
-![macBookPro17InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-mid-2009-17in-device.jpg)
 ### [MacBook Pro (15-inch, Mid 2009)](https://support.apple.com/kb/SP544)
 * identifier: MacBookPro5,3
 ![macBookPro15InchMid2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2009-15in-device.jpg)
@@ -374,6 +389,9 @@ For markdown `modelappledump markdown`
 ### [MacBook Pro (13-inch, Mid 2009)](https://support.apple.com/kb/SP541)
 * identifier: MacBookPro5,5
 ![macBookPro13InchMid2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2009-13in-device.jpg)
+### [MacBook Pro (17-inch, Early 2009)](https://support.apple.com/kb/SP503)
+* identifier: MacBookPro5,2
+![macBookPro17InchEarly2009](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-mid-2009-17in-device.jpg)
 ### [MacBook Pro (15-inch, Late 2008)](https://support.apple.com/kb/SP499)
 * identifier: MacBookPro5,1
 ![macBookPro15InchLate2008](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2008-15in-device.jpg)
