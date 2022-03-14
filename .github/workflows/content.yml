@@ -24,4 +24,4 @@ jobs:
         # commit if change
         git add dump.json
         git commit -m "Update JSON dump"
-        git push origin
+        git push origin -b master
