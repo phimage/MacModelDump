@@ -20,6 +20,8 @@ public struct Dump {
             return MarkdownRenderer.self
         case "human", "emoji":
             return HumanRenderer.self
+        case "json":
+            return JSONRenderer.self
         default:
             return HumanRenderer.self
         }
@@ -45,10 +47,13 @@ public struct Dump {
     public static func run(renderer rendererString: String, type: String) {
         let renderer = Dump.renderer(for: rendererString)
         let models = Dump.models(for: type)
-        for model in models {
+
+        renderer.header()
+        for (index, model) in models.enumerated() {
             let (data, response, error) = URLSession.shared.synchronousDataTask(with: model.url)
             guard let dataUnwrapped = data, let html = String(data: dataUnwrapped, encoding: .utf8)  else {
                 print("\(String(describing: error)), \(String(describing: response))")
+                // XXX will make json not valid, maybe send error to renderer
                 continue
             }
             var devices: [Device] = []
@@ -107,8 +112,9 @@ public struct Dump {
                 print("error")
             }
 
-            renderer.render(devices: devices, model: model)
+            renderer.render(devices: devices, model: model, isLastModel: (index + 1) == models.count)
         }
+        renderer.footer()
     }
 }
 
@@ -149,6 +155,18 @@ return """
 """
     }
 
+    var toJSON: String {
+return """
+{
+ "modelName": "\(modelName)",
+ "name": "\(name)",
+ "shortName": "\(shortName)",
+ "kb": "\(kb)",
+ "image": "https://support.apple.com\(image)",
+ "identifiers": "\(identifier.joined(separator: ", "))"
+}
+"""
+    }
 }
 public struct ModelInfo {
     var models: String {
@@ -172,12 +190,19 @@ public struct ModelInfo {
 }
 
 public protocol DevicesRenderer {
-    static func render(devices: [Device], model: ModelInfo)
+    static func render(devices: [Device], model: ModelInfo, isLastModel: Bool)
+    static func header()
+    static func footer()
+}
+
+extension DevicesRenderer {
+    public static func header() {}
+    public static func footer() {}
 }
 
 public struct DeviceKitRenderer: DevicesRenderer {
 
-    public static func render(devices: [Device], model: ModelInfo) {
+    public static func render(devices: [Device], model: ModelInfo, isLastModel: Bool) {
         print("## \(model.alternativeURL), \(model.urlString)")
         print("\(model.models) = [")
         print(devices.map { $0.toDeviveKit }.joined(separator: ",\n"))
@@ -188,7 +213,7 @@ public struct DeviceKitRenderer: DevicesRenderer {
 
 public struct MarkdownRenderer: DevicesRenderer {
 
-    public static func render(devices: [Device], model: ModelInfo) {
+    public static func render(devices: [Device], model: ModelInfo, isLastModel: Bool) {
         print("## [\(model.shortName)](\(model.alternativeURL)) [🔎](\(model.urlString))")
         print("\n")
         print(devices.map { $0.toMarkdown }.joined(separator: "\n"))
@@ -198,7 +223,7 @@ public struct MarkdownRenderer: DevicesRenderer {
 
 public struct HumanRenderer: DevicesRenderer {
 
-    public static func render(devices: [Device], model: ModelInfo) {
+    public static func render(devices: [Device], model: ModelInfo, isLastModel: Bool) {
         print("🖥️ \(model.shortName)")
         print("🔗 \(model.alternativeURL)")
         print("")
@@ -206,6 +231,28 @@ public struct HumanRenderer: DevicesRenderer {
         print("")
     }
 
+}
+
+public struct JSONRenderer: DevicesRenderer {
+
+    public static func render(devices: [Device], model: ModelInfo, isLastModel: Bool) {
+        print("""
+{
+ "name": "\(model.shortName)",
+ "URL": "\(model.urlString)",
+ "alternativeURL": "\(model.alternativeURL)",
+ "devices": [
+   \((devices.map { $0.toJSON}.joined(separator: ",")))
+ ]
+}
+""")
+        if !isLastModel {
+            print(",")
+        }
+    }
+
+    public static func header() { print("{ \"models\": [") }
+    public static func footer() { print("]}") }
 }
 
 // MARK: - Extensions

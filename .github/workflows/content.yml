@@ -18,3 +18,6 @@ jobs:
       run: |
         .build/x86_64-apple-macosx/debug/modelappledump markdown > dump.md
         ./check.sh dump.md README.md     
+    - name: build json 
+      run: |
+        .build/x86_64-apple-macosx/debug/modelappledump json > dump.json

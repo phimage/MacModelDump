@@ -30,6 +30,11 @@ By default run  `modelappledump`
   🆔 Macmini8,1
 ...
 ```
+---
+
+For json `modelappledump json`
+
+Latest file produced by ci [dump.json](dump.json)
 
 ---
 
