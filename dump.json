@@ -1,0 +1,942 @@
+{
+  "models": [
+    {
+      "name": "Mac Mini",
+      "URL": "https://support.apple.com/en-us/HT201894",
+      "alternativeURL": "https://support.apple.com/specs/macmini",
+      "devices": [
+        {
+          "modelName": "Mac mini (M1, 2020)",
+          "name": "macMiniM12020",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP823",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2020-silver.jpg",
+          "identifiers": "Macmini9,1"
+        },
+        {
+          "modelName": "Mac mini (2018)",
+          "name": "macMini2018",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP782",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2018-space-gray.jpg",
+          "identifiers": "Macmini8,1"
+        },
+        {
+          "modelName": "Mac mini (Late 2014)",
+          "name": "macMiniLate2014",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP710",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2014.jpg",
+          "identifiers": "Macmini7,1"
+        },
+        {
+          "modelName": "Mac mini (Late 2012)",
+          "name": "macMiniLate2012",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP659",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2011-2012-2014-device.jpg",
+          "identifiers": "Macmini6,1"
+        },
+        {
+          "modelName": "Mac mini (Mid 2011)",
+          "name": "macMiniMid2011",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP632",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2011-2012-2014-device.jpg",
+          "identifiers": "Macmini5,1,  Macmini5,2"
+        },
+        {
+          "modelName": "Mac mini (Mid 2010)",
+          "name": "macMiniMid2010",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP585",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2010-device.jpg",
+          "identifiers": "Macmini4,1"
+        },
+        {
+          "modelName": "Mac mini (Late 2009)",
+          "name": "macMiniLate2009",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP577",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2009-device.jpg",
+          "identifiers": "Macmini3,1"
+        },
+        {
+          "modelName": "Mac mini (Early 2009)",
+          "name": "macMiniEarly2009",
+          "shortName": "Mac Mini",
+          "kb": "https://support.apple.com/kb/SP505",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macmini/mac-mini-2009-device.jpg",
+          "identifiers": "Macmini3,1"
+        }
+      ]
+    },
+    {
+      "name": "iMac",
+      "URL": "https://support.apple.com/en-us/HT201634",
+      "alternativeURL": "https://support.apple.com/mac/imac",
+      "devices": [
+        {
+          "modelName": "iMac (24-inch, M1, 2021)",
+          "name": "iMac24InchM12021",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP839",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/id-imac-24-2021.png",
+          "identifiers": "iMac21,1"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, 2020)",
+          "name": "iMacRetina5K27Inch2020",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP821",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2020.jpg",
+          "identifiers": "iMac20,1, iMac20,2"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, 2019)",
+          "name": "iMacRetina5K27Inch2019",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP790",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2019.jpg",
+          "identifiers": "iMac19,1"
+        },
+        {
+          "modelName": "iMac (Retina 4K, 21.5-inch, 2019)",
+          "name": "iMacRetina4K215Inch2019",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP789",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2019.jpg",
+          "identifiers": "iMac19,2"
+        },
+        {
+          "modelName": "iMac Pro (2017)",
+          "name": "iMacPro2017",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP771",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-pro-2017.jpg",
+          "identifiers": "iMacPro1,1"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, 2017)",
+          "name": "iMacRetina5K27Inch2017",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP760",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2017.jpg",
+          "identifiers": "iMac18,3"
+        },
+        {
+          "modelName": "iMac (Retina 4K, 21.5-inch, 2017)",
+          "name": "iMacRetina4K215Inch2017",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP759",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2017.jpg",
+          "identifiers": "iMac18,2"
+        },
+        {
+          "modelName": "iMac (21.5-inch, 2017)",
+          "name": "iMac215Inch2017",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP758",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2017.jpg",
+          "identifiers": "iMac18,1"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, Late 2015)",
+          "name": "iMacRetina5K27InchLate2015",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP731",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-late-2015.jpg",
+          "identifiers": "iMac17,1"
+        },
+        {
+          "modelName": "iMac (Retina 4K, 21.5-inch, Late 2015)",
+          "name": "iMacRetina4K215InchLate2015",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP732",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2015.jpg",
+          "identifiers": "iMac16,2"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Late 2015)",
+          "name": "iMac215InchLate2015",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP733",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-21-5-2015.jpg",
+          "identifiers": "iMac16,1"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, Mid 2015)",
+          "name": "iMacRetina5K27InchMid2015",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP718",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-mid-2015.jpg",
+          "identifiers": "iMac15,1"
+        },
+        {
+          "modelName": "iMac (Retina 5K, 27-inch, Late 2014)",
+          "name": "iMacRetina5K27InchLate2014",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP707",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2014.jpg",
+          "identifiers": "iMac15,1"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Mid 2014)",
+          "name": "iMac215InchMid2014",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP701",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2014.jpg",
+          "identifiers": "iMac14,4"
+        },
+        {
+          "modelName": "iMac (27-inch, Late 2013)",
+          "name": "iMac27InchLate2013",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP688",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2013.jpg",
+          "identifiers": "iMac14,2"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Late 2013)",
+          "name": "iMac215InchLate2013",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP687",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2013.jpg",
+          "identifiers": "iMac14,1"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Late 2012)",
+          "name": "iMac215InchLate2012",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP665",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2012.jpg",
+          "identifiers": "iMac13,1"
+        },
+        {
+          "modelName": "iMac (27-inch, Mid 2011)",
+          "name": "iMac27InchMid2011",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP689",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2011.jpg",
+          "identifiers": "iMac12,2"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Mid 2011)",
+          "name": "iMac215InchMid2011",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP623",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2011.jpg",
+          "identifiers": "iMac12,1"
+        },
+        {
+          "modelName": "iMac (27-inch, Mid 2010)",
+          "name": "iMac27InchMid2010",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP695",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2010.jpg",
+          "identifiers": "iMac11,3"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Mid 2010)",
+          "name": "iMac215InchMid2010",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP588",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2010.jpg",
+          "identifiers": "iMac11,2"
+        },
+        {
+          "modelName": "iMac (27-inch, Late 2009)",
+          "name": "iMac27InchLate2009",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP696",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg",
+          "identifiers": "iMac10,1"
+        },
+        {
+          "modelName": "iMac (21.5-inch, Late 2009)",
+          "name": "iMac215InchLate2009",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP576",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg",
+          "identifiers": "iMac10,1"
+        },
+        {
+          "modelName": "iMac (24-inch, Early 2009)",
+          "name": "iMac24InchEarly2009",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP507",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-27-2009-late.jpg",
+          "identifiers": "iMac9,1"
+        },
+        {
+          "modelName": "iMac (20-inch, Early 2009)",
+          "name": "iMac20InchEarly2009",
+          "shortName": "iMac",
+          "kb": "https://support.apple.com/kb/SP507",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/imac/imac-24-2009-early.jpg",
+          "identifiers": "iMac9,1"
+        }
+      ]
+    },
+    {
+      "name": "Mac Pro",
+      "URL": "https://support.apple.com/en-us/HT202888",
+      "alternativeURL": "https://support.apple.com/mac/mac-pro",
+      "devices": [
+        {
+          "modelName": "Mac Pro (2019)",
+          "name": "macPro2019",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP797",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2019.jpg",
+          "identifiers": "MacPro7,1"
+        },
+        {
+          "modelName": "Mac Pro (Rack, 2019)",
+          "name": "macProRack2019",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP810",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2019-rack.jpg",
+          "identifiers": "MacPro7,1"
+        },
+        {
+          "modelName": "Mac Pro (Late 2013)",
+          "name": "macProLate2013",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP697",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2013.jpg",
+          "identifiers": "MacPro6,1"
+        },
+        {
+          "modelName": "Mac Pro (Mid 2012)",
+          "name": "macProMid2012",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP652",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg",
+          "identifiers": "MacPro5,1"
+        },
+        {
+          "modelName": "Mac Pro Server (Mid 2012)",
+          "name": "macProServerMid2012",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP652",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg",
+          "identifiers": "MacPro5,1"
+        },
+        {
+          "modelName": "Mac Pro (Mid 2010)",
+          "name": "macProMid2010",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP589",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg",
+          "identifiers": "MacPro5,1"
+        },
+        {
+          "modelName": "Mac Pro Server (Mid 2010)",
+          "name": "macProServerMid2010",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP589",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg",
+          "identifiers": "MacPro5,1"
+        },
+        {
+          "modelName": "Mac Pro (Early 2009)",
+          "name": "macProEarly2009",
+          "shortName": "Mac Pro",
+          "kb": "https://support.apple.com/kb/SP506",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macpro/id-mac-pro-2009-2012.jpg",
+          "identifiers": "MacPro4,1"
+        }
+      ]
+    },
+    {
+      "name": "Mac Book",
+      "URL": "https://support.apple.com/en-us/HT201608",
+      "alternativeURL": "https://support.apple.com/mac/macbook",
+      "devices": [
+        {
+          "modelName": "MacBook (Retina, 12-inch, 2017)",
+          "name": "macBookRetina12Inch2017",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP757",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-2017-device.jpg",
+          "identifiers": "MacBook10,1"
+        },
+        {
+          "modelName": "MacBook (Retina, 12-inch, Early 2016)",
+          "name": "macBookRetina12InchEarly2016",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP741",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-2016-device.jpg",
+          "identifiers": "MacBook9,1"
+        },
+        {
+          "modelName": "MacBook (Retina, 12-inch, Early 2015)",
+          "name": "macBookRetina12InchEarly2015",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP712",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-2015-device.jpg",
+          "identifiers": "MacBook8,1"
+        },
+        {
+          "modelName": "MacBook (13-inch, Mid 2010)",
+          "name": "macBook13InchMid2010",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP584",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-late-2009-2010-device.jpg",
+          "identifiers": "MacBook7,1"
+        },
+        {
+          "modelName": "MacBook (13-inch, Late 2009)",
+          "name": "macBook13InchLate2009",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP579",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-late-2009-2010-device.jpg",
+          "identifiers": "MacBook6,1"
+        },
+        {
+          "modelName": "MacBook (13-inch, Mid 2009)",
+          "name": "macBook13InchMid2009",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP512",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-early-mid-2009-device.jpg",
+          "identifiers": "MacBook5,2"
+        },
+        {
+          "modelName": "MacBook (13-inch, Early 2009)",
+          "name": "macBook13InchEarly2009",
+          "shortName": "Mac Book",
+          "kb": "https://support.apple.com/kb/SP504",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/macbook-early-mid-2009-device.jpg",
+          "identifiers": "MacBook5,2"
+        }
+      ]
+    },
+    {
+      "name": "Mac Book Air",
+      "URL": "https://support.apple.com/en-us/HT201862",
+      "alternativeURL": "https://support.apple.com/mac/macbook-air",
+      "devices": [
+        {
+          "modelName": "MacBook Air (M1, 2020)",
+          "name": "macBookAirM12020",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP825",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-late-device.jpg",
+          "identifiers": "MacBookAir10,1"
+        },
+        {
+          "modelName": "MacBook Air (Retina, 13-inch, 2020)",
+          "name": "macBookAirRetina13Inch2020",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP813",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-device.jpg",
+          "identifiers": "MacBookAir9,1"
+        },
+        {
+          "modelName": "MacBook Air (Retina, 13-inch, 2019)",
+          "name": "macBookAirRetina13Inch2019",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP798",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2018-device.jpg",
+          "identifiers": "MacBookAir8,2"
+        },
+        {
+          "modelName": "MacBook Air (Retina, 13-inch, 2018)",
+          "name": "macBookAirRetina13Inch2018",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP783",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2018-device.jpg",
+          "identifiers": "MacBookAir8,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, 2017)",
+          "name": "macBookAir13Inch2017",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP753",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2017-device.jpg",
+          "identifiers": "MacBookAir7,2"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Early 2015)",
+          "name": "macBookAir13InchEarly2015",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP714",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2015-13in-device.jpg",
+          "identifiers": "MacBookAir7,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Early 2015)",
+          "name": "macBookAir11InchEarly2015",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP713",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2015-11in-device.jpg",
+          "identifiers": "MacBookAir7,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Early 2014)",
+          "name": "macBookAir13InchEarly2014",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP700",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2013-2014-13in-device.jpg",
+          "identifiers": "MacBookAir6,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Early 2014)",
+          "name": "macBookAir11InchEarly2014",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP699",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2013-2014-11in-device.jpg",
+          "identifiers": "MacBookAir6,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Mid 2013)",
+          "name": "macBookAir13InchMid2013",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP678",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2013-2014-13in-device.jpg",
+          "identifiers": "MacBookAir6,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Mid 2013)",
+          "name": "macBookAir11InchMid2013",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP677",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2013-2014-11in-device.jpg",
+          "identifiers": "MacBookAir6,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Mid 2012)",
+          "name": "macBookAir13InchMid2012",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP670",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2012-13in-device.jpg",
+          "identifiers": "MacBookAir5,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Mid 2012)",
+          "name": "macBookAir11InchMid2012",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP650",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2012-11in-device.jpg",
+          "identifiers": "MacBookAir5,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Mid 2011)",
+          "name": "macBookAir13InchMid2011",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP683",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2011-13in-device.jpg",
+          "identifiers": "MacBookAir4,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Mid 2011)",
+          "name": "macBookAir11InchMid2011",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP631",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2011-11in-device.jpg",
+          "identifiers": "MacBookAir4,1"
+        },
+        {
+          "modelName": "MacBook Air (13-inch, Late 2010)",
+          "name": "macBookAir13InchLate2010",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP618",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2009-2010-13in-device.jpg",
+          "identifiers": "MacBookAir3,2"
+        },
+        {
+          "modelName": "MacBook Air (11-inch, Late 2010)",
+          "name": "macBookAir11InchLate2010",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP617",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2010-11in-device.jpg",
+          "identifiers": "MacBookAir3,1"
+        },
+        {
+          "modelName": "MacBook Air (Mid 2009)",
+          "name": "macBookAirMid2009",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP548",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2009-2010-13in-device.jpg",
+          "identifiers": "MacBookAir2,1"
+        }
+      ]
+    },
+    {
+      "name": "Mac Book Pro",
+      "URL": "https://support.apple.com/en-us/HT201300",
+      "alternativeURL": "https://support.apple.com/mac/macbook-pro",
+      "devices": [
+        {
+          "modelName": "MacBook Pro (14-inch, 2021)",
+          "name": "macBookPro14Inch2021",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP854",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-14in.png",
+          "identifiers": "MacBookPro18,3, MacBookPro18,4"
+        },
+        {
+          "modelName": "MacBook Pro (16-inch, 2021)",
+          "name": "macBookPro16Inch2021",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP858",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-16in.png",
+          "identifiers": "MacBookPro18,1, MacBookPro18,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, M1, 2020)",
+          "name": "macBookPro13InchM12020",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP824",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-late-13in-device.jpg",
+          "identifiers": "MacBookPro17,1 "
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2020TwoThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP818",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg",
+          "identifiers": "MacBookPro16,3"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2020FourThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP819",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-13in-device.jpg",
+          "identifiers": "MacBookPro16,2"
+        },
+        {
+          "modelName": "MacBook Pro (16-inch, 2019)",
+          "name": "macBookPro16Inch2019",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP809",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-16in-2019.jpg",
+          "identifiers": "MacBookPro16,1, MacBookPro16,4"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2019TwoThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP799",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-13in-device.jpg",
+          "identifiers": "MacBookPro15,4"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, 2019)",
+          "name": "macBookPro15Inch2019",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP794",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-15in-device.jpg",
+          "identifiers": "MacBookPro15,1,"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2019FourThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP795",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-13in-device.jpg",
+          "identifiers": "MacBookPro15,2"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, 2018)",
+          "name": "macBookPro15Inch2018",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP776",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-15in-device.jpg",
+          "identifiers": "MacBookPro15,1"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2018FourThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP775",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2018-13in-device.jpg",
+          "identifiers": "MacBookPro15,2"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, 2017)",
+          "name": "macBookPro15Inch2017",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP756",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2017-15in-device.jpg",
+          "identifiers": "MacBookPro14,3"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2017, Four Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2017FourThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP755",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2017-13in-device.jpg",
+          "identifiers": "MacBookPro14,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2017TwoThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP754",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2017-13in-device-2thunderbolt-3ports.jpg",
+          "identifiers": "MacBookPro14,1"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, 2016)",
+          "name": "macBookPro15Inch2016",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP749",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2016-15in-device.jpg",
+          "identifiers": "MacBookPro13,3"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2016, Four Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2016FourThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP748",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2016-13in-device.jpg",
+          "identifiers": "MacBookPro13,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, 2016, Two Thunderbolt 3 ports)",
+          "name": "macBookPro13Inch2016TwoThunderbolt3Ports",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP747",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2016-13in-device.jpg",
+          "identifiers": "MacBookPro13,1"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 15-inch, Mid 2015)",
+          "name": "macBookProRetina15InchMid2015",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP719",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2015-15in-device.jpg",
+          "identifiers": "MacBookPro11,4, MacBookPro11,5"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 13-inch, Early 2015)",
+          "name": "macBookProRetina13InchEarly2015",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP715",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2015-13in-device.jpg",
+          "identifiers": "MacBookPro12,1"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 15-inch, Mid 2014)",
+          "name": "macBookProRetina15InchMid2014",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP704",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2014-15in-device.jpg",
+          "identifiers": "MacBookPro11,2,"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 13-inch, Mid 2014)",
+          "name": "macBookProRetina13InchMid2014",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP703",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2014-13in-device.jpg",
+          "identifiers": "MacBookPro11,1"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 15-inch, Late 2013)",
+          "name": "macBookProRetina15InchLate2013",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP690",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2013-15in-device.jpg",
+          "identifiers": "MacBookPro11,2,"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 13-inch, Late 2013)",
+          "name": "macBookProRetina13InchLate2013",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP691",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2013-13in-device.jpg",
+          "identifiers": "MacBookPro11,1"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 15-inch, Early 2013)",
+          "name": "macBookProRetina15InchEarly2013",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP669",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2013-15in-device.jpg",
+          "identifiers": "MacBookPro10,1"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 13-inch, Early 2013)",
+          "name": "macBookProRetina13InchEarly2013",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP668",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2013-13in-device.jpg",
+          "identifiers": "MacBookPro10,2"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 13-inch, Late 2012)",
+          "name": "macBookProRetina13InchLate2012",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP658",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2012-13in-device.jpg",
+          "identifiers": "MacBookPro10,2"
+        },
+        {
+          "modelName": "MacBook Pro (Retina, 15-inch, Mid 2012)",
+          "name": "macBookProRetina15InchMid2012",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP653",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-15in-device.jpg",
+          "identifiers": "MacBookPro10,1"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Mid 2012)",
+          "name": "macBookPro15InchMid2012",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP694",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-15in-device2.jpg",
+          "identifiers": "MacBookPro9,1"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, Mid 2012)",
+          "name": "macBookPro13InchMid2012",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP649",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2012-13in-device.jpg",
+          "identifiers": "MacBookPro9,2"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Late 2011)",
+          "name": "macBookPro17InchLate2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP646",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-17in-device.jpg",
+          "identifiers": "MacBookPro8,3"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Late 2011)",
+          "name": "macBookPro15InchLate2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP644",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-15in-device.jpg",
+          "identifiers": "MacBookPro8,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, Late 2011)",
+          "name": "macBookPro13InchLate2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP645",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2011-13in-device.jpg",
+          "identifiers": "MacBookPro8,1"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Early 2011)",
+          "name": "macBookPro17InchEarly2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP621",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-17in-device.jpg",
+          "identifiers": "MacBookPro8,3"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Early 2011)",
+          "name": "macBookPro15InchEarly2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP620",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-15in-device.jpg",
+          "identifiers": "MacBookPro8,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, Early 2011)",
+          "name": "macBookPro13InchEarly2011",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP619",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2011-13in-device.jpg",
+          "identifiers": "MacBookPro8,1"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Mid 2010)",
+          "name": "macBookPro17InchMid2010",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP581",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2010-17in-device.jpg",
+          "identifiers": "MacBookPro6,1"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Mid 2010)",
+          "name": "macBookPro15InchMid2010",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP582",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2010-15in-device.jpg",
+          "identifiers": "MacBookPro6,2"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, Mid 2010)",
+          "name": "macBookPro13InchMid2010",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP583",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2010-13in-device.jpg",
+          "identifiers": "MacBookPro7,1"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Mid 2009)",
+          "name": "macBookPro17InchMid2009",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP546",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-mid-2009-17in-device.jpg",
+          "identifiers": "MacBookPro5,2"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Mid 2009)",
+          "name": "macBookPro15InchMid2009",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP544",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2009-15in-device.jpg",
+          "identifiers": "MacBookPro5,3"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, 2.53GHz, Mid 2009)",
+          "name": "macBookPro15Inch253GHzMid2009",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP544",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2009-15in-device.jpg",
+          "identifiers": "MacBookPro5,3"
+        },
+        {
+          "modelName": "MacBook Pro (13-inch, Mid 2009)",
+          "name": "macBookPro13InchMid2009",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP541",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-mid-2009-13in-device.jpg",
+          "identifiers": "MacBookPro5,5"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Early 2009)",
+          "name": "macBookPro17InchEarly2009",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP503",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-mid-2009-17in-device.jpg",
+          "identifiers": "MacBookPro5,2"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Late 2008)",
+          "name": "macBookPro15InchLate2008",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP499",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-late-2008-15in-device.jpg",
+          "identifiers": "MacBookPro5,1"
+        },
+        {
+          "modelName": "MacBook Pro (17-inch, Early 2008)",
+          "name": "macBookPro17InchEarly2008",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP4",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2008-17in-device.jpg",
+          "identifiers": "MacBookPro4,1"
+        },
+        {
+          "modelName": "MacBook Pro (15-inch, Early 2008)",
+          "name": "macBookPro15InchEarly2008",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP4",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2008-15in-device.jpg",
+          "identifiers": "MacBookPro4,1"
+        }
+      ]
+    }
+  ]
+}
