@@ -21,3 +21,7 @@ jobs:
     - name: build json 
       run: |
         .build/x86_64-apple-macosx/debug/modelappledump json > dump.json
+        # commit if change
+        git add dump.json
+        git commit -m "Update JSON dump"
+        git push origin
