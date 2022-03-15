@@ -18,7 +18,7 @@ Dirty script to create device for DeviceKit https://github.com/devicekit/DeviceK
 
 ---
 
-By default run  `modelappledump`
+By default run  `modelappledump` to have human readable presentation
 
 ```
 🖥️ Mac Mini
@@ -34,7 +34,7 @@ By default run  `modelappledump`
 
 For json `modelappledump json`
 
-Latest file produced by ci [dump.json](dump.json)
+Latest file produced by ci [dump.json](dump.json) or https://phimage.github.io/MacModelDump/dump.json
 
 ---
 
