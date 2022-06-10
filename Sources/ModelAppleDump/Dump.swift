@@ -9,7 +9,8 @@ public struct Dump {
         ModelInfo("macPro", "https://support.apple.com/en-us/HT202888", "https://support.apple.com/mac/mac-pro", "Mac Pro"),
         ModelInfo("macBook", "https://support.apple.com/en-us/HT201608", "https://support.apple.com/mac/macbook", "Mac Book"),
         ModelInfo("macBookAir", "https://support.apple.com/en-us/HT201862", "https://support.apple.com/mac/macbook-air", "Mac Book Air"),
-        ModelInfo("macBookPro", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro")
+        ModelInfo("macBookPro", "https://support.apple.com/en-us/HT201300", "https://support.apple.com/mac/macbook-pro", "Mac Book Pro"),
+        ModelInfo("macStudio", "https://support.apple.com/en-us/HT213073", "https://support.apple.com/mac/mac-studio", "Mac Studio")
     ]
 
     public static func renderer(for string: String) -> DevicesRenderer.Type {
