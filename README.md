@@ -211,6 +211,9 @@ For markdown `modelappledump markdown`
 ## [Mac Book Air](https://support.apple.com/mac/macbook-air) [🔎](https://support.apple.com/en-us/HT201862)
 
 
+### [MacBook Air (M2, 2022)](https://support.apple.com/kb/SP869)
+* identifier: Mac14,2
+![macBookAirM22022](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/2022-macbook-air-m2-colors.png)
 ### [MacBook Air (M1, 2020)](https://support.apple.com/kb/SP825)
 * identifier: MacBookAir10,1
 ![macBookAirM12020](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookair/macbook-air-2020-late-device.jpg)
@@ -268,6 +271,9 @@ For markdown `modelappledump markdown`
 ## [Mac Book Pro](https://support.apple.com/mac/macbook-pro) [🔎](https://support.apple.com/en-us/HT201300)
 
 
+### [MacBook Pro (13-inch, M2, 2022)](https://support.apple.com/kb/SP870)
+* identifier: Mac14,7
+![macBookPro13InchM22022](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-13-in-M2-2022.png)
 ### [MacBook Pro (14-inch, 2021)](https://support.apple.com/kb/SP854)
 * identifier: MacBookPro18,3, MacBookPro18,4
 ![macBookPro14Inch2021](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-14in.png)
@@ -406,6 +412,13 @@ For markdown `modelappledump markdown`
 ### [MacBook Pro (15-inch, Early 2008)](https://support.apple.com/kb/SP4)
 * identifier: MacBookPro4,1
 ![macBookPro15InchEarly2008](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2008-15in-device.jpg)
+## [Mac Studio](https://support.apple.com/mac/mac-studio) [🔎](https://support.apple.com/en-us/HT213073)
+
+
+### [Mac Studio (2022)](https://support.apple.com/kb/SP865)
+* identifier: Mac13,1
+![macStudio2022](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac/new-mac-id-2022.png)
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

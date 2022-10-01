@@ -418,6 +418,14 @@
       "alternativeURL": "https://support.apple.com/mac/macbook-air",
       "devices": [
         {
+          "modelName": "MacBook Air (M2, 2022)",
+          "name": "macBookAirM22022",
+          "shortName": "Mac Book Air",
+          "kb": "https://support.apple.com/kb/SP869",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbook/2022-macbook-air-m2-colors.png",
+          "identifiers": "Mac14,2"
+        },
+        {
           "modelName": "MacBook Air (M1, 2020)",
           "name": "macBookAirM12020",
           "shortName": "Mac Book Air",
@@ -568,6 +576,14 @@
       "URL": "https://support.apple.com/en-us/HT201300",
       "alternativeURL": "https://support.apple.com/mac/macbook-pro",
       "devices": [
+        {
+          "modelName": "MacBook Pro (13-inch, M2, 2022)",
+          "name": "macBookPro13InchM22022",
+          "shortName": "Mac Book Pro",
+          "kb": "https://support.apple.com/kb/SP870",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-13-in-M2-2022.png",
+          "identifiers": "Mac14,7"
+        },
         {
           "modelName": "MacBook Pro (14-inch, 2021)",
           "name": "macBookPro14Inch2021",
@@ -935,6 +951,21 @@
           "kb": "https://support.apple.com/kb/SP4",
           "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-early-2008-15in-device.jpg",
           "identifiers": "MacBookPro4,1"
+        }
+      ]
+    },
+    {
+      "name": "Mac Studio",
+      "URL": "https://support.apple.com/en-us/HT213073",
+      "alternativeURL": "https://support.apple.com/mac/mac-studio",
+      "devices": [
+        {
+          "modelName": "Mac Studio (2022)",
+          "name": "macStudio2022",
+          "shortName": "Mac Studio",
+          "kb": "https://support.apple.com/kb/SP865",
+          "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac/new-mac-id-2022.png",
+          "identifiers": "Mac13,1"
         }
       ]
     }
