@@ -1,5 +1,7 @@
 # ModelAppleDump
 
+⚠️ Apple change the website, it do not work anymore
+
 [![Build Status][build-shield]][build-url]
 [![Swift 5.1][swift-shield]][swift-url]
 [![Stargazers][stars-shield]][stars-url]
